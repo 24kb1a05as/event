@@ -15,4 +15,21 @@ background- color:lightblue;
 margin-top:20px;"> 
 Hover over this box 
 </div> 
+<script> 
+document.getElementById("textInput").addEventListener("input", function (event) { 
+document.getElementById("inputDisplay").innerText = "You typed: " + event.target.value; 
+}); 
+document.getElementById("hoverBox").addEventListener("mouseover", function () 
+{ 
+this.style.backgroundColor = "orange"; 
+}); 
+ 
+document.getElementById("hoverBox").addEventListener("mouseout", function () 
+{ 
+this.style.backgroundColor = "lightblue"; 
+}); 
+</script> 
+</body> 
+</html> 
+Output:
 
